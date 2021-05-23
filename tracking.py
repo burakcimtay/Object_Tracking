@@ -16,7 +16,6 @@ def drawBox(img,bbox):
 while True:
     success, img=cap.read()
     success, bbox=tracker.update(img)
-    # img=cv2.flip(img,1)
     
     if success:
         drawBox(img, bbox)
